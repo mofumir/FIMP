@@ -1,5 +1,7 @@
 # Fricking Irrelevant Measuring-converter Prototype
 
+![fimp](https://user-images.githubusercontent.com/52525474/103474432-19c42080-4de7-11eb-9bfd-56f36ad260b5.gif)
+
 ## Description
 
 Calculate selected number with template expession through right click context menu.
