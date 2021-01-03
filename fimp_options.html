@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIMP Option Menu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="js/browser-polyfill.js" type="application/javascript"></script>
+    <script src="js/math.js" type="application/javascript"></script>
+</head>
+
+<body style="background-color:darkslategrey;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand">FIMP Options</a>
+    </nav>
+
+    <div class="container-fluid" id="contents">
+
+        <div class="my-5 p-3 mx-2 bg-white">
+            <h4>Presets</h4>
+            <hr>
+            <table class="table">
+                <thead>
+                    <th scope="col">Name</th>
+                    <th scope="col">Unit(From)</th>
+                    <th scope="col">Unit(To)</th>
+                    <th scope="col">Exp.Template</th>
+                    <th scope="col">Show Name on context</th>
+                    <th scope="col">Action</th>
+                </thead>
+                <tbody id="presets">
+
+                </tbody>
+            </table>
+
+            <div class="d-flex justify-content-end">
+                <button class="btn btn-secondary" id="default">Default Settings</button>
+            </div>
+
+        </div>
+
+        <form class="border border-primary rounded-lg bg-white mx-2 p-2" action="">
+            <h4>Create new preset</h4>
+            <hr>
+            <div class="form-row">
+                <div class="form-group col">
+                    <label for="newPresetName">Preset name</label>
+                    <input type="text" class="form-control" id="newPresetName" placeholder="Preset Name" required>
+                    <div class="invalid-feedback" id="presetErrorMessage">test</div>
+                </div>
+                <div class="form-group col">
+                    <label for="newFromUnit">Unit(From)</label>
+                    <input type="text" class="form-control" id="newFromUnit" placeholder="ex: inch">
+                    <div class="form-text">Unit names can be empty</div>
+                </div>
+                <div class="form-group col">
+                    <label for="newToUnit">Unit(To)</label>
+                    <input type="text" class="form-control" id="newToUnit" placeholder="ex: cm">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="newExprTemp">Expression Template</label>
+                <input type="text" class="form-control" id="newExprTemp" placeholder="ex: #{x}+1-2*(3/4)" required>
+                <div class="invalid-feedback" id="exprTempErrorMessage"></div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input id="presetNameOnContext" class="form-check-input" type="checkbox" checked disabled>
+                    <label for="presetNameOnContext" class="form-check-label">Show Preset names on context
+                        menu (Unit names must be defined to disable this option)</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-outline-danger mx-1" type="button" id="createSetting" disabled>Create</button>
+            </div>
+        </form>
+
+    </div>
+
+
+    </div>
+
+
+</body>
+<script src="js/options.js"></script>
+
+</html>
