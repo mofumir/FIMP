@@ -20,6 +20,5 @@ Also, this is my first attempt at making extension, so thought might as well mak
 ## Licensing
 
 The content of this project itself is licensed under MIT.
-
-This extension includes [math.js](https://github.com/josdejong/mathjs) that is distributed in the Apache License V2.0
-This extension also includes [browser-polyfill](https://github.com/mozilla/webextension-polyfill) which is licensed under Mozilla Public License
+This extension includes [math.js](https://github.com/josdejong/mathjs) that is distributed in the Apache License V2.0.
+This extension also includes [browser-polyfill](https://github.com/mozilla/webextension-polyfill) which is licensed under Mozilla Public License.
